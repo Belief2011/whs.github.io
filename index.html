@@ -3,10 +3,1299 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wu Hanshuo - PhD, Research Associate</title>
-    <link rel="stylesheet" href="css/profile.css">
+    <meta name="description" content="Wu Hanshuo - PhD Research Associate specializing in High-Power Fiber Lasers and Transverse Mode Instability">
+    <meta name="keywords" content="Fiber Laser, High-Power Laser, TMI, Research, PhD">
+    <meta name="author" content="Wu Hanshuo">
+    <title>Wu Hanshuo | PhD Research Associate - Fiber Laser Technology</title>
+    <link rel="canonical" href="https://www.researchgate.net/profile/Wu-Hanshuo">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --primary-dark: #1d4ed8;
+            --primary-light: #3b82f6;
+            --secondary-color: #0f172a;
+            --accent-color: #06b6d4;
+            --accent-green: #10b981;
+            --accent-purple: #8b5cf6;
+            --text-color: #334155;
+            --text-light: #64748b;
+            --bg-light: #f8fafc;
+            --bg-white: #ffffff;
+            --border-color: #e2e8f0;
+            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+            --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+            --transition-fast: 0.15s ease;
+            --transition-normal: 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-white);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section {
+            padding: 100px 0;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 60px;
+            color: var(--secondary-color);
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+            margin: 20px auto 0;
+            border-radius: 2px;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: var(--shadow-sm);
+            z-index: 1000;
+            transition: var(--transition-normal);
+        }
+
+        .navbar.scrolled {
+            box-shadow: var(--shadow-md);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .nav-logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: var(--transition-fast);
+        }
+
+        .nav-logo:hover {
+            color: var(--primary-dark);
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 8px;
+        }
+
+        .nav-link {
+            padding: 8px 16px;
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            border-radius: 8px;
+            transition: var(--transition-fast);
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: var(--primary-color);
+            background: rgba(37, 99, 235, 0.1);
+        }
+
+        .nav-toggle {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        .hamburger {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background: var(--text-color);
+            position: relative;
+            transition: var(--transition-fast);
+        }
+
+        .hamburger::before,
+        .hamburger::after {
+            content: '';
+            position: absolute;
+            width: 24px;
+            height: 2px;
+            background: var(--text-color);
+            left: 0;
+            transition: var(--transition-fast);
+        }
+
+        .hamburger::before {
+            top: -8px;
+        }
+
+        .hamburger::after {
+            top: 8px;
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--bg-light) 0%, var(--bg-white) 50%, #f0f9ff 100%);
+            position: relative;
+            padding-top: 70px;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 80%, rgba(37, 99, 235, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(6, 182, 212, 0.05) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 1;
+            text-align: center;
+        }
+
+        .hero-text {
+            animation: fadeInUp 0.8s ease;
+        }
+
+        .hero-title {
+            margin-bottom: 24px;
+        }
+
+        .hero-title .greeting {
+            display: block;
+            font-size: 1.25rem;
+            font-weight: 400;
+            color: var(--text-light);
+            margin-bottom: 8px;
+        }
+
+        .hero-title .name {
+            display: block;
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: var(--secondary-color);
+            line-height: 1.2;
+            margin-bottom: 8px;
+        }
+
+        .hero-title .title {
+            display: block;
+            font-size: 1.25rem;
+            font-weight: 500;
+            color: var(--primary-color);
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: var(--text-light);
+            margin-bottom: 40px;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            text-align: center;
+            background: var(--bg-white);
+            padding: 24px 32px;
+            border-radius: 16px;
+            box-shadow: var(--shadow-md);
+            min-width: 140px;
+            transition: var(--transition-normal);
+        }
+
+        .stat-item:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .stat-number {
+            display: block;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            line-height: 1;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-top: 8px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .data-status {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: rgba(37, 99, 235, 0.1);
+            border-radius: 30px;
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+
+        .data-status i {
+            font-size: 0.9rem;
+        }
+
+        .data-status a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .data-status a:hover {
+            text-decoration: underline;
+        }
+
+        .data-status.cached {
+            background: rgba(6, 182, 212, 0.1);
+            color: var(--accent-color);
+        }
+
+        .data-status.success {
+            background: rgba(34, 197, 94, 0.1);
+            color: #22c55e;
+        }
+
+        .data-status.fallback {
+            background: rgba(245, 158, 11, 0.1);
+            color: #f59e0b;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 32px;
+            font-size: 1rem;
+            font-weight: 500;
+            text-decoration: none;
+            border-radius: 12px;
+            transition: var(--transition-normal);
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: white;
+            box-shadow: 0 4px 14px rgba(37, 99, 235, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(37, 99, 235, 0.5);
+        }
+
+        .btn-secondary {
+            background: var(--bg-white);
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+        }
+
+        .btn-secondary:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+        }
+
+        .btn-outline:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: bounce 2s infinite;
+        }
+
+        .scroll-indicator i {
+            font-size: 24px;
+            color: var(--text-light);
+        }
+
+        .about-section {
+            background: linear-gradient(180deg, var(--bg-white) 0%, var(--bg-light) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .about-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--border-color), transparent);
+        }
+
+        .about-wrapper {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .about-intro {
+            text-align: center;
+            margin-bottom: 60px;
+            padding: 40px;
+            background: var(--bg-white);
+            border-radius: 24px;
+            box-shadow: var(--shadow-lg);
+            position: relative;
+        }
+
+        .about-intro::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+            border-radius: 2px;
+        }
+
+        .intro-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 20px;
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(6, 182, 212, 0.1));
+            border-radius: 30px;
+            margin-bottom: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--primary-color);
+        }
+
+        .intro-badge i {
+            font-size: 1rem;
+        }
+
+        .intro-name {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--secondary-color);
+            margin-bottom: 8px;
+            letter-spacing: -0.02em;
+        }
+
+        .intro-affiliation {
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            font-weight: 500;
+            margin-bottom: 24px;
+        }
+
+        .intro-description {
+            font-size: 1.05rem;
+            color: var(--text-color);
+            line-height: 1.8;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .research-tags {
+            background: var(--bg-white);
+            padding: 32px;
+            border-radius: 20px;
+            box-shadow: var(--shadow-md);
+        }
+
+        .tag-label {
+            display: block;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--text-light);
+            margin-bottom: 16px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .tags-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .research-tag {
+            padding: 10px 20px;
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.08), rgba(6, 182, 212, 0.08));
+            color: var(--primary-color);
+            border-radius: 30px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: var(--transition-fast);
+            border: 1px solid rgba(37, 99, 235, 0.15);
+        }
+
+        .research-tag:hover {
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            color: white;
+            transform: translateY(-2px);
+            border-color: transparent;
+        }
+
+        .education-section {
+            background: var(--bg-light);
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+            padding-left: 40px;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(180deg, var(--primary-color), var(--accent-color));
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 40px;
+            padding-left: 40px;
+        }
+
+        .timeline-marker {
+            position: absolute;
+            left: -49px;
+            top: 0;
+            width: 16px;
+            height: 16px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            border: 4px solid var(--bg-light);
+            box-shadow: 0 0 0 4px var(--primary-color);
+        }
+
+        .timeline-content {
+            background: var(--bg-white);
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: var(--shadow-md);
+        }
+
+        .timeline-content h3 {
+            font-size: 1.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 8px;
+        }
+
+        .timeline-content .institution {
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            font-weight: 500;
+            margin-bottom: 12px;
+        }
+
+        .timeline-content .description {
+            color: var(--text-color);
+            line-height: 1.7;
+        }
+
+        .research-section {
+            background: var(--bg-white);
+        }
+
+        .research-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        .research-card {
+            background: var(--bg-light);
+            padding: 40px;
+            border-radius: 20px;
+            transition: var(--transition-normal);
+            border: 1px solid transparent;
+        }
+
+        .research-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-xl);
+            border-color: var(--primary-color);
+            background: var(--bg-white);
+        }
+
+        .research-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 24px;
+        }
+
+        .research-icon i {
+            font-size: 28px;
+            color: white;
+        }
+
+        .research-card h3 {
+            font-size: 1.4rem;
+            color: var(--secondary-color);
+            margin-bottom: 16px;
+        }
+
+        .research-card > p {
+            color: var(--text-color);
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+
+        .research-topics {
+            list-style: none;
+        }
+
+        .research-topics li {
+            padding: 8px 0;
+            color: var(--text-light);
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .research-topics li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+        }
+
+        .publications-section {
+            background: var(--bg-light);
+        }
+
+        .publications-filter {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 10px 24px;
+            background: var(--bg-white);
+            border: 2px solid var(--border-color);
+            border-radius: 30px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--text-color);
+            cursor: pointer;
+            transition: var(--transition-fast);
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: var(--primary-color);
+            border-color: var(--primary-color);
+            color: white;
+        }
+
+        .publications-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .publication-item {
+            display: flex;
+            gap: 24px;
+            background: var(--bg-white);
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition-normal);
+            border-left: 4px solid transparent;
+        }
+
+        .publication-item:hover {
+            transform: translateX(8px);
+            box-shadow: var(--shadow-lg);
+            border-left-color: var(--primary-color);
+        }
+
+        .publication-item.hidden {
+            display: none;
+        }
+
+        .pub-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--border-color);
+            min-width: 50px;
+        }
+
+        .pub-content {
+            flex: 1;
+        }
+
+        .pub-content h3 {
+            font-size: 1.15rem;
+            color: var(--secondary-color);
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+
+        .pub-journal {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            margin-bottom: 12px;
+        }
+
+        .pub-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            padding: 4px 12px;
+            background: rgba(37, 99, 235, 0.1);
+            color: var(--primary-color);
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .publications-more {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .publications-more p {
+            color: var(--text-light);
+            margin-bottom: 20px;
+        }
+
+        .contact-section {
+            background: linear-gradient(135deg, var(--secondary-color) 0%, #1e3a5f 100%);
+            color: white;
+            padding: 60px 0;
+        }
+
+        .contact-section .section-title {
+            color: white;
+            margin-bottom: 40px;
+        }
+
+        .contact-section .section-title::after {
+            background: linear-gradient(90deg, var(--accent-color), var(--primary-light));
+        }
+
+        .contact-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .contact-item {
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+        }
+
+        .contact-item i {
+            font-size: 1.25rem;
+            color: var(--accent-color);
+            width: 44px;
+            height: 44px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .contact-details h3 {
+            font-size: 1rem;
+            margin-bottom: 4px;
+        }
+
+        .contact-details p,
+        .contact-details a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: var(--transition-fast);
+        }
+
+        .contact-details a:hover {
+            color: var(--accent-color);
+        }
+
+        .email-protected {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .email-hidden {
+            font-family: 'Courier New', monospace;
+            letter-spacing: 0.5px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .email-revealed {
+            color: var(--accent-color);
+            font-weight: 500;
+        }
+
+        .reveal-email-btn {
+            background: rgba(6, 182, 212, 0.2);
+            border: 1px solid rgba(6, 182, 212, 0.3);
+            color: var(--accent-color);
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: var(--transition-fast);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .reveal-email-btn:hover {
+            background: rgba(6, 182, 212, 0.3);
+            transform: scale(1.05);
+        }
+
+        .captcha-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(4px);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 2000;
+            padding: 20px;
+        }
+
+        .captcha-modal.active {
+            display: flex;
+        }
+
+        .captcha-content {
+            background: white;
+            border-radius: 20px;
+            padding: 32px;
+            max-width: 380px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            animation: captchaSlideIn 0.3s ease;
+        }
+
+        @keyframes captchaSlideIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9) translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1) translateY(0);
+            }
+        }
+
+        .captcha-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .captcha-header i {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+        }
+
+        .captcha-header h4 {
+            font-size: 1.2rem;
+            color: var(--secondary-color);
+            font-weight: 600;
+        }
+
+        .captcha-instruction {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            margin-bottom: 16px;
+        }
+
+        .captcha-display {
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            border: 2px solid var(--border-color);
+            border-radius: 12px;
+            padding: 16px 24px;
+            text-align: center;
+            margin-bottom: 16px;
+            font-family: 'Courier New', monospace;
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: 8px;
+            color: var(--secondary-color);
+            user-select: none;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .captcha-display::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: repeating-linear-gradient(
+                45deg,
+                transparent,
+                transparent 10px,
+                rgba(0, 0, 0, 0.02) 10px,
+                rgba(0, 0, 0, 0.02) 20px
+            );
+            pointer-events: none;
+        }
+
+        .captcha-input-wrapper {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .captcha-input-wrapper input {
+            flex: 1;
+            padding: 12px 16px;
+            border: 2px solid var(--border-color);
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-family: 'Courier New', monospace;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            transition: var(--transition-fast);
+        }
+
+        .captcha-input-wrapper input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+
+        .captcha-refresh {
+            width: 48px;
+            height: 48px;
+            background: var(--bg-light);
+            border: 2px solid var(--border-color);
+            border-radius: 10px;
+            cursor: pointer;
+            transition: var(--transition-fast);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-light);
+        }
+
+        .captcha-refresh:hover {
+            background: var(--border-color);
+            color: var(--primary-color);
+        }
+
+        .captcha-refresh.spinning i {
+            animation: spin 0.5s ease;
+        }
+
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .captcha-actions {
+            display: flex;
+            gap: 12px;
+        }
+
+        .captcha-actions .btn {
+            flex: 1;
+            padding: 12px 20px;
+        }
+
+        .captcha-error {
+            color: #ef4444;
+            font-size: 0.9rem;
+            margin-top: 12px;
+            text-align: center;
+            min-height: 20px;
+        }
+
+        .footer {
+            background: var(--secondary-color);
+            color: white;
+            padding: 60px 0 30px;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 30px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .footer-info h3 {
+            font-size: 1.5rem;
+            margin-bottom: 8px;
+        }
+
+        .footer-info p {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 16px;
+        }
+
+        .footer-links a {
+            width: 44px;
+            height: 44px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.25rem;
+            transition: var(--transition-fast);
+        }
+
+        .footer-links a:hover {
+            background: var(--primary-color);
+            transform: translateY(-4px);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.9rem;
+        }
+
+        .update-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 56px;
+            height: 56px;
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            border: none;
+            border-radius: 50%;
+            color: white;
+            font-size: 1.25rem;
+            cursor: pointer;
+            box-shadow: 0 4px 20px rgba(37, 99, 235, 0.4);
+            transition: var(--transition-normal);
+            z-index: 999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .update-btn:hover {
+            transform: translateY(-4px) scale(1.05);
+            box-shadow: 0 8px 30px rgba(37, 99, 235, 0.5);
+        }
+
+        .update-btn.loading i {
+            animation: spin 1s linear infinite;
+        }
+
+        .update-tooltip {
+            position: absolute;
+            bottom: 100%;
+            right: 0;
+            margin-bottom: 10px;
+            padding: 8px 12px;
+            background: var(--secondary-color);
+            color: white;
+            font-size: 0.85rem;
+            border-radius: 8px;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition-fast);
+        }
+
+        .update-btn:hover .update-tooltip {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateX(-50%) translateY(0);
+            }
+            40% {
+                transform: translateX(-50%) translateY(-10px);
+            }
+            60% {
+                transform: translateX(-50%) translateY(-5px);
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .hero-stats {
+                justify-content: center;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+
+            .research-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                position: fixed;
+                top: 70px;
+                left: 0;
+                right: 0;
+                background: white;
+                flex-direction: column;
+                padding: 20px;
+                gap: 0;
+                box-shadow: var(--shadow-lg);
+                transform: translateY(-100%);
+                opacity: 0;
+                visibility: hidden;
+                transition: var(--transition-normal);
+            }
+
+            .nav-menu.active {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .nav-link {
+                display: block;
+                padding: 12px 16px;
+                border-bottom: 1px solid var(--border-color);
+            }
+
+            .nav-toggle {
+                display: block;
+            }
+
+            .nav-toggle.active .hamburger {
+                background: transparent;
+            }
+
+            .nav-toggle.active .hamburger::before {
+                top: 0;
+                transform: rotate(45deg);
+            }
+
+            .nav-toggle.active .hamburger::after {
+                top: 0;
+                transform: rotate(-45deg);
+            }
+
+            .hero-title .name {
+                font-size: 2.5rem;
+            }
+
+            .about-intro {
+                padding: 30px 20px;
+            }
+
+            .intro-name {
+                font-size: 1.6rem;
+            }
+
+            .research-tags {
+                padding: 24px;
+            }
+
+            .tags-container {
+                justify-content: center;
+            }
+
+            .hero-stats {
+                gap: 24px;
+            }
+
+            .stat-number {
+                font-size: 2rem;
+            }
+
+            .section {
+                padding: 60px 0;
+            }
+
+            .section-title {
+                font-size: 2rem;
+                margin-bottom: 40px;
+            }
+
+            .publication-item {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            .pub-number {
+                font-size: 1.5rem;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+            }
+
+            .update-btn {
+                bottom: 20px;
+                right: 20px;
+                width: 50px;
+                height: 50px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-title .name {
+                font-size: 2rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+
+            .stat-item {
+                min-width: 100px;
+                padding: 16px 20px;
+            }
+
+            .research-card {
+                padding: 24px;
+            }
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar">
@@ -34,7 +1323,7 @@
                     <span class="name">Wu Hanshuo</span>
                     <span class="title">PhD, Research Associate</span>
                 </h1>
-                <p class="hero-subtitle">Fiber Laser Technology | High-Power Fiber Lasers</p>
+                <p class="hero-subtitle">Fiber Laser Technology | High-Power Fiber Lasers | Transverse Mode Instability</p>
                 <div class="hero-stats">
                     <div class="stat-item">
                         <span class="stat-number" id="stat-publications">--</span>
@@ -78,50 +1367,13 @@
                     <p class="intro-description">
                         A dedicated researcher specializing in high-power fiber lasers and fiber amplifiers, 
                         with extensive expertise in power scaling, transverse mode instability suppression, 
-                        and novel fiber structure design.
-                    </p>
-                </div>
-                
-                <div class="about-details">
-                    <div class="detail-block full-width">
-                        <div class="detail-header">
-                            <i class="fas fa-bullseye"></i>
-                            <h4>Research Focus</h4>
-                        </div>
-                        <p>My research centers on overcoming the fundamental limitations in high-power fiber laser systems. 
+                        and novel fiber structure design. My work focuses on pushing the boundaries of fiber 
+                        laser performance through innovative approaches in fiber design and pumping schemes.
+                        My research centers on overcoming the fundamental limitations in high-power fiber laser systems. 
                         I investigate transverse mode instability (TMI) — one of the primary bottlenecks for power scaling — 
-                        and develop innovative solutions to push the boundaries of fiber laser performance.</p>
-                    </div>
-                </div>
-                
-                <div class="about-highlights-new">
-                    <div class="highlight-item">
-                        <div class="highlight-icon">
-                            <i class="fas fa-fire"></i>
-                        </div>
-                        <div class="highlight-content">
-                            <span class="highlight-number">8 kW</span>
-                            <span class="highlight-label">Laser Output</span>
-                        </div>
-                    </div>
-                    <div class="highlight-item">
-                        <div class="highlight-icon">
-                            <i class="fas fa-file-alt"></i>
-                        </div>
-                        <div class="highlight-content">
-                            <span class="highlight-number" id="highlight-pubs">105+</span>
-                            <span class="highlight-label">Publications</span>
-                        </div>
-                    </div>
-                    <div class="highlight-item">
-                        <div class="highlight-icon">
-                            <i class="fas fa-quote-right"></i>
-                        </div>
-                        <div class="highlight-content">
-                            <span class="highlight-number" id="highlight-citations">1,000+</span>
-                            <span class="highlight-label">Citations</span>
-                        </div>
-                    </div>
+                        and develop innovative solutions including confined-doped fiber designs, low-NA fiber architectures, 
+                        and novel pumping strategies to push the boundaries of fiber laser performance.
+                    </p>
                 </div>
                 
                 <div class="research-tags">
@@ -133,6 +1385,8 @@
                         <span class="research-tag">Confined-Doped Fiber</span>
                         <span class="research-tag">Tandem Pumping</span>
                         <span class="research-tag">Beam Quality</span>
+                        <span class="research-tag">SRS/SBS Suppression</span>
+                        <span class="research-tag">Raman Lasers</span>
                     </div>
                 </div>
             </div>
@@ -148,7 +1402,7 @@
                     <div class="timeline-content">
                         <h3>Doctor of Philosophy (PhD)</h3>
                         <p class="institution">Optical Engineering / Fiber Laser Technology</p>
-                        <p class="description">Focused on theoretical and experimental research of high-power fiber lasers, with significant progress in transverse mode instability suppression and fiber structure optimization design.</p>
+                        <p class="description">Focused on theoretical and experimental research of high-power fiber lasers, with significant progress in transverse mode instability suppression and fiber structure optimization design. Developed novel confined-doped fiber architectures and achieved record-breaking laser output powers.</p>
                     </div>
                 </div>
             </div>
@@ -388,6 +1642,13 @@
                     <div class="contact-item">
                         <i class="fas fa-university"></i>
                         <div class="contact-details">
+                            <h3>Affiliation</h3>
+                            <p>National University of Defense Technology</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-flask"></i>
+                        <div class="contact-details">
                             <h3>Research Fields</h3>
                             <p>Fiber Lasers · High-Power Amplifiers · Mode Instability</p>
                         </div>
@@ -419,6 +1680,11 @@
         </div>
     </div>
 
+    <button class="update-btn" id="update-btn" title="Refresh Data">
+        <span class="update-tooltip">Refresh Data</span>
+        <i class="fas fa-sync-alt"></i>
+    </button>
+
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
@@ -427,7 +1693,7 @@
                     <p>PhD Researcher | Fiber Laser Technology</p>
                 </div>
                 <div class="footer-links">
-                    <a href="https://www.researchgate.net/profile/Wu-Hanshuo" target="_blank"><i class="fab fa-researchgate"></i></a>
+                    <a href="https://www.researchgate.net/profile/Wu-Hanshuo" target="_blank" title="ResearchGate"><i class="fab fa-researchgate"></i></a>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -436,7 +1702,493 @@
         </div>
     </footer>
 
-    <script src="js/data-fetcher.js"></script>
-    <script src="js/profile.js"></script>
+    <script>
+    (function() {
+        'use strict';
+
+        const CONFIG = {
+            researchGateUrl: 'https://www.researchgate.net/profile/Wu-Hanshuo',
+            corsProxies: [
+                'https://api.allorigins.win/raw?url=',
+                'https://corsproxy.io/?',
+                'https://api.codetabs.com/v1/proxy?quest='
+            ],
+            cacheKey: 'researchgate_data_cache',
+            cacheExpiry: 24 * 60 * 60 * 1000,
+            fallbackData: {
+                publications: 105,
+                citations: 1041,
+                reads: 16593,
+                lastUpdated: new Date().toISOString()
+            }
+        };
+
+        const ResearchGateDataFetcher = {
+            async fetchWithProxy(url) {
+                for (const proxy of CONFIG.corsProxies) {
+                    try {
+                        const controller = new AbortController();
+                        const timeoutId = setTimeout(() => controller.abort(), 10000);
+                        
+                        const response = await fetch(proxy + encodeURIComponent(url), {
+                            method: 'GET',
+                            headers: {
+                                'Accept': 'text/html,application/xhtml+xml'
+                            },
+                            signal: controller.signal
+                        });
+                        
+                        clearTimeout(timeoutId);
+                        
+                        if (response.ok) {
+                            return await response.text();
+                        }
+                    } catch (error) {
+                        console.warn(`Proxy ${proxy} failed:`, error.message);
+                        continue;
+                    }
+                }
+                throw new Error('All CORS proxies failed');
+            },
+
+            parseResearchGateData(html) {
+                const data = {
+                    publications: 0,
+                    citations: 0,
+                    reads: 0,
+                    lastUpdated: new Date().toISOString()
+                };
+
+                const publicationMatch = html.match(/Publications\s*\((\d+)\)/i) || 
+                                          html.match(/(\d+)\s*Publications/i) ||
+                                          html.match(/class="nova-legacy-e-text nova-legacy-e-text--size-xl[^"]*"[^>]*>(\d+)</);
+                if (publicationMatch) {
+                    data.publications = parseInt(publicationMatch[1]);
+                }
+
+                const citationMatch = html.match(/Citations[^>]*>[\s\S]*?(\d[\d,]*)/i) ||
+                                      html.match(/(\d[\d,]*)\s*Citations/i) ||
+                                      html.match(/class="nova-legacy-e-text[^"]*nova-legacy-e-text--color-grey-700[^"]*"[^>]*>(\d[\d,]*)</);
+                if (citationMatch) {
+                    data.citations = parseInt(citationMatch[1].replace(/,/g, ''));
+                }
+
+                const readsMatch = html.match(/Reads[^>]*>[\s\S]*?(\d[\d,]*)/i) ||
+                                   html.match(/(\d[\d,]*)\s*Reads/i);
+                if (readsMatch) {
+                    data.reads = parseInt(readsMatch[1].replace(/,/g, ''));
+                }
+
+                if (data.publications === 0 && data.citations === 0 && data.reads === 0) {
+                    const numbers = html.match(/>\s*(\d[\d,]*)\s*</g);
+                    if (numbers && numbers.length >= 3) {
+                        const parsedNumbers = numbers
+                            .slice(0, 5)
+                            .map(n => parseInt(n.replace(/[><,\s]/g, '')))
+                            .filter(n => !isNaN(n) && n > 0);
+                        
+                        if (parsedNumbers.length >= 3) {
+                            parsedNumbers.sort((a, b) => b - a);
+                            data.publications = parsedNumbers[0] || 0;
+                            data.reads = parsedNumbers[1] || 0;
+                            data.citations = parsedNumbers[2] || 0;
+                        }
+                    }
+                }
+
+                return data;
+            },
+
+            getCachedData() {
+                try {
+                    const cached = localStorage.getItem(CONFIG.cacheKey);
+                    if (cached) {
+                        const data = JSON.parse(cached);
+                        const now = Date.now();
+                        const cachedTime = new Date(data.lastUpdated).getTime();
+                        
+                        if (now - cachedTime < CONFIG.cacheExpiry) {
+                            return data;
+                        }
+                    }
+                } catch (error) {
+                    console.warn('Failed to read cache:', error);
+                }
+                return null;
+            },
+
+            setCachedData(data) {
+                try {
+                    localStorage.setItem(CONFIG.cacheKey, JSON.stringify(data));
+                } catch (error) {
+                    console.warn('Failed to write cache:', error);
+                }
+            },
+
+            async fetchData() {
+                const cachedData = this.getCachedData();
+                if (cachedData) {
+                    console.log('Using cached data from:', cachedData.lastUpdated);
+                    return { ...cachedData, fromCache: true };
+                }
+
+                try {
+                    console.log('Fetching fresh data from ResearchGate...');
+                    const html = await this.fetchWithProxy(CONFIG.researchGateUrl);
+                    const data = this.parseResearchGateData(html);
+                    
+                    if (data.publications > 0 || data.citations > 0 || data.reads > 0) {
+                        this.setCachedData(data);
+                        return { ...data, fromCache: false };
+                    }
+                } catch (error) {
+                    console.error('Failed to fetch ResearchGate data:', error);
+                }
+
+                console.log('Using fallback data');
+                return { ...CONFIG.fallbackData, fromCache: false, isFallback: true };
+            },
+
+            async refreshData() {
+                localStorage.removeItem(CONFIG.cacheKey);
+                return await this.fetchData();
+            }
+        };
+
+        function animateNumber(element, start, end, duration) {
+            if (!element) return;
+            const startTime = performance.now();
+            const diff = end - start;
+            
+            function update(currentTime) {
+                const elapsed = currentTime - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+                const easeProgress = 1 - Math.pow(1 - progress, 3);
+                const current = Math.floor(start + diff * easeProgress);
+                
+                element.textContent = current.toLocaleString();
+                
+                if (progress < 1) {
+                    requestAnimationFrame(update);
+                }
+            }
+            
+            requestAnimationFrame(update);
+        }
+
+        function updateAllStats(data) {
+            const statPublications = document.getElementById('stat-publications');
+            const statCitations = document.getElementById('stat-citations');
+            const statReads = document.getElementById('stat-reads');
+            const totalPublications = document.getElementById('total-publications');
+
+            animateNumber(statPublications, 0, data.publications, 1500);
+            animateNumber(statCitations, 0, data.citations, 1500);
+            animateNumber(statReads, 0, data.reads, 1500);
+            
+            if (totalPublications) {
+                animateNumber(totalPublications, 0, data.publications, 1500);
+            }
+        }
+
+        function updateDataStatus(data) {
+            const dataStatus = document.getElementById('data-status');
+            if (!dataStatus) return;
+            
+            if (data.fromCache) {
+                const cachedTime = new Date(data.lastUpdated).toLocaleString();
+                dataStatus.innerHTML = `
+                    <i class="fas fa-database"></i>
+                    <span>Data cached from ${cachedTime} | <a href="#" id="refresh-data">Refresh</a></span>
+                `;
+                dataStatus.classList.add('cached');
+            } else if (data.isFallback) {
+                dataStatus.innerHTML = `
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <span>Using fallback data | <a href="#" id="refresh-data">Retry</a></span>
+                `;
+                dataStatus.classList.add('fallback');
+            } else {
+                dataStatus.innerHTML = `
+                    <i class="fas fa-check-circle"></i>
+                    <span>Data updated: ${new Date().toLocaleString()}</span>
+                `;
+                dataStatus.classList.add('success');
+            }
+
+            const refreshBtn = document.getElementById('refresh-data');
+            if (refreshBtn) {
+                refreshBtn.addEventListener('click', async (e) => {
+                    e.preventDefault();
+                    await refreshAllData();
+                });
+            }
+        }
+
+        async function refreshAllData() {
+            const dataStatus = document.getElementById('data-status');
+            const updateBtn = document.getElementById('update-btn');
+            
+            if (dataStatus) {
+                dataStatus.innerHTML = `
+                    <i class="fas fa-sync-alt fa-spin"></i>
+                    <span>Refreshing data...</span>
+                `;
+                dataStatus.className = 'data-status';
+            }
+            
+            if (updateBtn) {
+                updateBtn.classList.add('loading');
+            }
+            
+            const freshData = await ResearchGateDataFetcher.refreshData();
+            updateAllStats(freshData);
+            updateDataStatus(freshData);
+            
+            if (updateBtn) {
+                updateBtn.classList.remove('loading');
+            }
+        }
+
+        async function initializeApp() {
+            const navbar = document.querySelector('.navbar');
+            const navToggle = document.querySelector('.nav-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+            const navLinks = document.querySelectorAll('.nav-link');
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const publicationItems = document.querySelectorAll('.publication-item');
+            const updateBtn = document.getElementById('update-btn');
+
+            try {
+                const data = await ResearchGateDataFetcher.fetchData();
+                updateAllStats(data);
+                updateDataStatus(data);
+                console.log('ResearchGate data loaded:', data);
+            } catch (error) {
+                console.error('Failed to load ResearchGate data:', error);
+                const fallback = CONFIG.fallbackData;
+                updateAllStats(fallback);
+                updateDataStatus({ isFallback: true });
+            }
+
+            function handleScroll() {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+
+                updateActiveNavLink();
+            }
+
+            function updateActiveNavLink() {
+                const sections = document.querySelectorAll('section[id]');
+                const scrollPosition = window.scrollY + 100;
+
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.offsetHeight;
+                    const sectionId = section.getAttribute('id');
+
+                    if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                        navLinks.forEach(link => {
+                            link.classList.remove('active');
+                            if (link.getAttribute('href') === `#${sectionId}`) {
+                                link.classList.add('active');
+                            }
+                        });
+                    }
+                });
+            }
+
+            if (navToggle && navMenu) {
+                navToggle.addEventListener('click', function() {
+                    navToggle.classList.toggle('active');
+                    navMenu.classList.toggle('active');
+                });
+            }
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
+                    
+                    if (targetSection) {
+                        const offsetTop = targetSection.offsetTop - 70;
+                        window.scrollTo({
+                            top: offsetTop,
+                            behavior: 'smooth'
+                        });
+                    }
+
+                    if (navToggle && navMenu) {
+                        navToggle.classList.remove('active');
+                        navMenu.classList.remove('active');
+                    }
+                });
+            });
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+
+                    const filter = this.getAttribute('data-filter');
+
+                    publicationItems.forEach(item => {
+                        const category = item.getAttribute('data-category');
+                        
+                        if (filter === 'all' || category === filter) {
+                            item.classList.remove('hidden');
+                            item.style.animation = 'fadeInUp 0.5s ease forwards';
+                        } else {
+                            item.classList.add('hidden');
+                        }
+                    });
+                });
+            });
+
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            const animatedElements = document.querySelectorAll('.research-card, .publication-item, .highlight-card, .stat-card');
+            animatedElements.forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(30px)';
+                el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(el);
+            });
+
+            window.addEventListener('scroll', handleScroll);
+            handleScroll();
+
+            if (updateBtn) {
+                updateBtn.addEventListener('click', refreshAllData);
+            }
+
+            setInterval(async () => {
+                const data = await ResearchGateDataFetcher.fetchData();
+                if (!data.fromCache) {
+                    console.log('Auto-refreshed data:', data);
+                    updateAllStats(data);
+                    updateDataStatus(data);
+                }
+            }, 30 * 60 * 1000);
+
+            const EmailProtection = {
+                realEmail: 'whsopt@163.com',
+                currentCaptcha: '',
+                
+                generateCaptcha() {
+                    const chars = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
+                    let captcha = '';
+                    for (let i = 0; i < 5; i++) {
+                        captcha += chars.charAt(Math.floor(Math.random() * chars.length));
+                    }
+                    this.currentCaptcha = captcha;
+                    return captcha;
+                },
+                
+                init() {
+                    const modal = document.getElementById('captcha-modal');
+                    const display = document.getElementById('captcha-display');
+                    const input = document.getElementById('captcha-input');
+                    const revealBtn = document.getElementById('reveal-email-btn');
+                    const verifyBtn = document.getElementById('captcha-verify');
+                    const cancelBtn = document.getElementById('captcha-cancel');
+                    const refreshBtn = document.getElementById('captcha-refresh');
+                    const errorEl = document.getElementById('captcha-error');
+                    const emailDisplay = document.getElementById('email-display');
+                    
+                    if (!modal) return;
+                    
+                    const showCaptcha = () => {
+                        display.textContent = this.generateCaptcha();
+                        modal.classList.add('active');
+                        input.value = '';
+                        errorEl.textContent = '';
+                        input.focus();
+                    };
+                    
+                    const hideCaptcha = () => {
+                        modal.classList.remove('active');
+                    };
+                    
+                    const verifyCaptcha = () => {
+                        const userInput = input.value.toUpperCase().trim();
+                        if (userInput === this.currentCaptcha) {
+                            hideCaptcha();
+                            emailDisplay.textContent = this.realEmail;
+                            emailDisplay.classList.add('email-revealed');
+                            revealBtn.innerHTML = '<i class="fas fa-check"></i>';
+                            revealBtn.disabled = true;
+                            revealBtn.style.cursor = 'default';
+                            revealBtn.title = 'Email revealed';
+                        } else {
+                            errorEl.textContent = 'Incorrect code. Please try again.';
+                            display.textContent = this.generateCaptcha();
+                            input.value = '';
+                            input.focus();
+                        }
+                    };
+                    
+                    revealBtn.addEventListener('click', showCaptcha);
+                    verifyBtn.addEventListener('click', verifyCaptcha);
+                    
+                    input.addEventListener('keypress', (e) => {
+                        if (e.key === 'Enter') {
+                            verifyCaptcha();
+                        }
+                    });
+                    
+                    cancelBtn.addEventListener('click', hideCaptcha);
+                    
+                    refreshBtn.addEventListener('click', () => {
+                        refreshBtn.classList.add('spinning');
+                        setTimeout(() => {
+                            refreshBtn.classList.remove('spinning');
+                        }, 500);
+                        display.textContent = this.generateCaptcha();
+                        input.value = '';
+                        input.focus();
+                    });
+                    
+                    modal.addEventListener('click', (e) => {
+                        if (e.target === modal) {
+                            hideCaptcha();
+                        }
+                    });
+                    
+                    document.addEventListener('keydown', (e) => {
+                        if (e.key === 'Escape' && modal.classList.contains('active')) {
+                            hideCaptcha();
+                        }
+                    });
+                }
+            };
+            
+            EmailProtection.init();
+        }
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initializeApp);
+        } else {
+            initializeApp();
+        }
+    })();
+    </script>
 </body>
 </html>
