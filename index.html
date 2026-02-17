@@ -247,90 +247,11 @@
             margin-bottom: 40px;
         }
 
-        .hero-stats {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            margin-bottom: 40px;
-            flex-wrap: wrap;
-        }
-
-        .stat-item {
-            text-align: center;
-            background: var(--bg-white);
-            padding: 24px 32px;
-            border-radius: 16px;
-            box-shadow: var(--shadow-md);
-            min-width: 140px;
-            transition: var(--transition-normal);
-        }
-
-        .stat-item:hover {
-            transform: translateY(-4px);
-            box-shadow: var(--shadow-lg);
-        }
-
-        .stat-number {
-            display: block;
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: var(--primary-color);
-            line-height: 1;
-        }
-
-        .stat-label {
-            font-size: 0.9rem;
-            color: var(--text-light);
-            margin-top: 8px;
-        }
-
         .hero-buttons {
             display: flex;
             justify-content: center;
             gap: 16px;
             flex-wrap: wrap;
-        }
-
-        .data-status {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background: rgba(37, 99, 235, 0.1);
-            border-radius: 30px;
-            font-size: 0.85rem;
-            color: var(--text-light);
-        }
-
-        .data-status i {
-            font-size: 0.9rem;
-        }
-
-        .data-status a {
-            color: var(--primary-color);
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        .data-status a:hover {
-            text-decoration: underline;
-        }
-
-        .data-status.cached {
-            background: rgba(6, 182, 212, 0.1);
-            color: var(--accent-color);
-        }
-
-        .data-status.success {
-            background: rgba(34, 197, 94, 0.1);
-            color: #22c55e;
-        }
-
-        .data-status.fallback {
-            background: rgba(245, 158, 11, 0.1);
-            color: #f59e0b;
         }
 
         .btn {
@@ -416,24 +337,12 @@
 
         .about-intro {
             text-align: center;
-            margin-bottom: 60px;
-            padding: 40px;
+            margin-bottom: 40px;
+            padding: 30px;
             background: var(--bg-white);
             border-radius: 24px;
             box-shadow: var(--shadow-lg);
             position: relative;
-        }
-
-        .about-intro::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80px;
-            height: 4px;
-            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
-            border-radius: 2px;
         }
 
         .intro-badge {
@@ -465,7 +374,7 @@
             font-size: 1.1rem;
             color: var(--primary-color);
             font-weight: 500;
-            margin-bottom: 24px;
+            margin-bottom: 16px;
         }
 
         .intro-description {
@@ -1075,56 +984,6 @@
             font-size: 0.9rem;
         }
 
-        .update-btn {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            width: 56px;
-            height: 56px;
-            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
-            border: none;
-            border-radius: 50%;
-            color: white;
-            font-size: 1.25rem;
-            cursor: pointer;
-            box-shadow: 0 4px 20px rgba(37, 99, 235, 0.4);
-            transition: var(--transition-normal);
-            z-index: 999;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .update-btn:hover {
-            transform: translateY(-4px) scale(1.05);
-            box-shadow: 0 8px 30px rgba(37, 99, 235, 0.5);
-        }
-
-        .update-btn.loading i {
-            animation: spin 1s linear infinite;
-        }
-
-        .update-tooltip {
-            position: absolute;
-            bottom: 100%;
-            right: 0;
-            margin-bottom: 10px;
-            padding: 8px 12px;
-            background: var(--secondary-color);
-            color: white;
-            font-size: 0.85rem;
-            border-radius: 8px;
-            white-space: nowrap;
-            opacity: 0;
-            visibility: hidden;
-            transition: var(--transition-fast);
-        }
-
-        .update-btn:hover .update-tooltip {
-            opacity: 1;
-            visibility: visible;
-        }
-
         @keyframes fadeInUp {
             from {
                 opacity: 0;
@@ -1229,14 +1088,6 @@
                 justify-content: center;
             }
 
-            .hero-stats {
-                gap: 24px;
-            }
-
-            .stat-number {
-                font-size: 2rem;
-            }
-
             .section {
                 padding: 60px 0;
             }
@@ -1260,13 +1111,6 @@
                 gap: 20px;
                 text-align: center;
             }
-
-            .update-btn {
-                bottom: 20px;
-                right: 20px;
-                width: 50px;
-                height: 50px;
-            }
         }
 
         @media (max-width: 480px) {
@@ -1284,11 +1128,6 @@
 
             .btn {
                 width: 100%;
-            }
-
-            .stat-item {
-                min-width: 100px;
-                padding: 16px 20px;
             }
 
             .research-card {
@@ -1324,24 +1163,6 @@
                     <span class="title">PhD, Research Associate</span>
                 </h1>
                 <p class="hero-subtitle">Fiber Laser Technology | High-Power Fiber Lasers | Transverse Mode Instability</p>
-                <div class="hero-stats">
-                    <div class="stat-item">
-                        <span class="stat-number" id="stat-publications">--</span>
-                        <span class="stat-label">Publications</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number" id="stat-citations">--</span>
-                        <span class="stat-label">Citations</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number" id="stat-reads">--</span>
-                        <span class="stat-label">Paper Reads</span>
-                    </div>
-                </div>
-                <div class="data-status" id="data-status">
-                    <i class="fas fa-sync-alt fa-spin"></i>
-                    <span>Fetching latest data from ResearchGate...</span>
-                </div>
                 <div class="hero-buttons">
                     <a href="#publications" class="btn btn-primary">View Publications</a>
                     <a href="#contact" class="btn btn-secondary">Contact Me</a>
@@ -1358,21 +1179,18 @@
             <h2 class="section-title">About Me</h2>
             <div class="about-wrapper">
                 <div class="about-intro">
-                    <div class="intro-badge">
-                        <i class="fas fa-microscope"></i>
-                        <span>Research Associate</span>
-                    </div>
                     <h3 class="intro-name">Wu Hanshuo, PhD</h3>
                     <p class="intro-affiliation">National University of Defense Technology</p>
                     <p class="intro-description">
-                        A dedicated researcher specializing in high-power fiber lasers and fiber amplifiers, 
-                        with extensive expertise in power scaling, transverse mode instability suppression, 
-                        and novel fiber structure design. My work focuses on pushing the boundaries of fiber 
-                        laser performance through innovative approaches in fiber design and pumping schemes.
-                        My research centers on overcoming the fundamental limitations in high-power fiber laser systems. 
-                        I investigate transverse mode instability (TMI) — one of the primary bottlenecks for power scaling — 
-                        and develop innovative solutions including confined-doped fiber designs, low-NA fiber architectures, 
-                        and novel pumping strategies to push the boundaries of fiber laser performance.
+                        I am a dedicated researcher specializing in high-power fiber lasers and fiber amplifiers, 
+                        with extensive expertise in power scaling, transverse mode instability (TMI) suppression, 
+                        and novel fiber structure design. My research centers on overcoming the fundamental 
+                        limitations in high-power fiber laser systems, investigating TMI as one of the primary 
+                        bottlenecks for power scaling. I develop innovative solutions including confined-doped 
+                        fiber designs, low-NA fiber architectures, and novel pumping strategies to push the 
+                        boundaries of fiber laser performance. Through innovative approaches in fiber design 
+                        and pumping schemes, my work focuses on achieving high-brightness, high-power laser 
+                        output with excellent beam quality.
                     </p>
                 </div>
                 
@@ -1400,9 +1218,25 @@
                 <div class="timeline-item">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
-                        <h3>Doctor of Philosophy (PhD)</h3>
-                        <p class="institution">Optical Engineering / Fiber Laser Technology</p>
-                        <p class="description">Focused on theoretical and experimental research of high-power fiber lasers, with significant progress in transverse mode instability suppression and fiber structure optimization design. Developed novel confined-doped fiber architectures and achieved record-breaking laser output powers.</p>
+                        <h3>Doctor of Philosophy in Optical Engineering</h3>
+                        <p class="institution">National University of Defense Technology (2018-2022)</p>
+                        <p class="description">Specialization: Fiber Laser Technology. Focused on theoretical and experimental research of high-power fiber lasers, with significant progress in transverse mode instability suppression and fiber structure optimization design. Developed novel confined-doped fiber architectures and achieved record-breaking laser output powers.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Master of Science in Optical Engineering</h3>
+                        <p class="institution">National University of Defense Technology (2015-2017)</p>
+                        <p class="description">Specialization: Fiber Laser Technology. Conducted research on fiber laser systems and amplifier configurations, building foundational expertise in high-power laser technology and optical system design.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Bachelor of Science in Optical Engineering</h3>
+                        <p class="institution">Zhejiang University (2011-2015)</p>
+                        <p class="description">Established comprehensive knowledge in optical engineering fundamentals, including laser physics, optical system design, and photonic devices. Graduated with solid theoretical foundation for advanced research in fiber optics.</p>
                     </div>
                 </div>
             </div>
@@ -1680,11 +1514,6 @@
         </div>
     </div>
 
-    <button class="update-btn" id="update-btn" title="Refresh Data">
-        <span class="update-tooltip">Refresh Data</span>
-        <i class="fas fa-sync-alt"></i>
-    </button>
-
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
@@ -1877,76 +1706,10 @@
         }
 
         function updateAllStats(data) {
-            const statPublications = document.getElementById('stat-publications');
-            const statCitations = document.getElementById('stat-citations');
-            const statReads = document.getElementById('stat-reads');
             const totalPublications = document.getElementById('total-publications');
-
-            animateNumber(statPublications, 0, data.publications, 1500);
-            animateNumber(statCitations, 0, data.citations, 1500);
-            animateNumber(statReads, 0, data.reads, 1500);
             
             if (totalPublications) {
                 animateNumber(totalPublications, 0, data.publications, 1500);
-            }
-        }
-
-        function updateDataStatus(data) {
-            const dataStatus = document.getElementById('data-status');
-            if (!dataStatus) return;
-            
-            if (data.fromCache) {
-                const cachedTime = new Date(data.lastUpdated).toLocaleString();
-                dataStatus.innerHTML = `
-                    <i class="fas fa-database"></i>
-                    <span>Data cached from ${cachedTime} | <a href="#" id="refresh-data">Refresh</a></span>
-                `;
-                dataStatus.classList.add('cached');
-            } else if (data.isFallback) {
-                dataStatus.innerHTML = `
-                    <i class="fas fa-exclamation-triangle"></i>
-                    <span>Using fallback data | <a href="#" id="refresh-data">Retry</a></span>
-                `;
-                dataStatus.classList.add('fallback');
-            } else {
-                dataStatus.innerHTML = `
-                    <i class="fas fa-check-circle"></i>
-                    <span>Data updated: ${new Date().toLocaleString()}</span>
-                `;
-                dataStatus.classList.add('success');
-            }
-
-            const refreshBtn = document.getElementById('refresh-data');
-            if (refreshBtn) {
-                refreshBtn.addEventListener('click', async (e) => {
-                    e.preventDefault();
-                    await refreshAllData();
-                });
-            }
-        }
-
-        async function refreshAllData() {
-            const dataStatus = document.getElementById('data-status');
-            const updateBtn = document.getElementById('update-btn');
-            
-            if (dataStatus) {
-                dataStatus.innerHTML = `
-                    <i class="fas fa-sync-alt fa-spin"></i>
-                    <span>Refreshing data...</span>
-                `;
-                dataStatus.className = 'data-status';
-            }
-            
-            if (updateBtn) {
-                updateBtn.classList.add('loading');
-            }
-            
-            const freshData = await ResearchGateDataFetcher.refreshData();
-            updateAllStats(freshData);
-            updateDataStatus(freshData);
-            
-            if (updateBtn) {
-                updateBtn.classList.remove('loading');
             }
         }
 
@@ -1957,18 +1720,15 @@
             const navLinks = document.querySelectorAll('.nav-link');
             const filterBtns = document.querySelectorAll('.filter-btn');
             const publicationItems = document.querySelectorAll('.publication-item');
-            const updateBtn = document.getElementById('update-btn');
 
             try {
                 const data = await ResearchGateDataFetcher.fetchData();
                 updateAllStats(data);
-                updateDataStatus(data);
                 console.log('ResearchGate data loaded:', data);
             } catch (error) {
                 console.error('Failed to load ResearchGate data:', error);
                 const fallback = CONFIG.fallbackData;
                 updateAllStats(fallback);
-                updateDataStatus({ isFallback: true });
             }
 
             function handleScroll() {
@@ -2064,7 +1824,7 @@
                 });
             }, observerOptions);
 
-            const animatedElements = document.querySelectorAll('.research-card, .publication-item, .highlight-card, .stat-card');
+            const animatedElements = document.querySelectorAll('.research-card, .publication-item');
             animatedElements.forEach(el => {
                 el.style.opacity = '0';
                 el.style.transform = 'translateY(30px)';
@@ -2075,16 +1835,11 @@
             window.addEventListener('scroll', handleScroll);
             handleScroll();
 
-            if (updateBtn) {
-                updateBtn.addEventListener('click', refreshAllData);
-            }
-
             setInterval(async () => {
                 const data = await ResearchGateDataFetcher.fetchData();
                 if (!data.fromCache) {
                     console.log('Auto-refreshed data:', data);
                     updateAllStats(data);
-                    updateDataStatus(data);
                 }
             }, 30 * 60 * 1000);
 
